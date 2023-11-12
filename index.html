@@ -7,9 +7,11 @@
   <title>Fm Meraki</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style/styles.css">
-  <style>
-  
-  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
  
@@ -47,55 +49,99 @@
   </form>
 
   <main>
-    <section>
-      <article>
+    <section class="gridNoticias">
+
+    
+
+      <div id="carousel_noticias" class="areaCar">
+
+
+        <div id="miCarrusel" class="carousel slide " data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/debate.png" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/festival.png" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/alberto.png" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <!-- Agrega más elementos .carousel-item según sea necesario -->
+          </div>
+          <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
         
-        <a href="https://www.telam.com.ar/notas/202310/642709-debate-presidencial-elecciones-2023.html"> <img src="./img/debate.png" alt="debate"/> </a> 
-        <h2>Debate presidencial: los cinco candidatos tendrán un nuevo cruce</h2>
+      </div>
+
+      
+      <aside id="listaNoticias" class="areaLista">
+
+        <a href="#ultima-noticia"><li>Debate presidencial: los cinco candidatos tendrán un nuevo cruce</li></a>
+        <a href="#actualidad"><li>Con más de 20 mil personas cerró el Festival Bandera de Rosario</li></a>
+        <a href="#actualidad2"><li>River derrotó a Talleres en el Monumental y quedó como líder de la zona A</li></a>
+        <a href="#actualidad3"><li>Israel combate a Hamas, bombardea Gaza e intercambia disparos con Hezbollah</li></a>
+        <a href="#actualidad4"><li>Alberto Fernández viaja a China para participar del III Foro de la Franja y la Ruta</li></a>
+        <a href="#actualidad5"><li>Argentina lo logró: luchó en un duro partido ante Japón y clasificaron a cuartos</li></a>
+
+      </aside>
+
+      <article id="ultima-noticia" class="areaUltimaNo">
+        
+        <a href="https://www.telam.com.ar/notas/202310/642709-debate-presidencial-elecciones-2023.html"> <img class="imagenPrincipal" src="./img/debate.png" alt="debate"/> </a> 
+        <h2 >Debate presidencial: los cinco candidatos tendrán un nuevo cruce</h2>
         <p>En la Facultad de Derecho de la UBA, Massa, Bullrich, Milei, Schiaretti y Bregman
           <br> tendrán su segundo y último debate entre candidatos previo a los comicios del 22 de octubre,
           <br> bajo los siguientes ejes: "Seguridad"; "Trabajo y producción"; y "Desarrollo humano, vivienda
           <br> y protección del ambiente". Cuáles son las estrategias de cada espacio </p>
       </article>
-      <article>
-        <a href="https://www.telam.com.ar/notas/202310/642758-festival-bandera-rosario.html"> <img src="./img/festival.png" alt="festival"/> </a>
+
+
+      <article id="actualidad" class="areaActualidad">
+        <a href="https://www.telam.com.ar/notas/202310/642758-festival-bandera-rosario.html"> <img class="imagenPrincipal" src="./img/festival.png" alt="festival"/> </a>
         <h2>Con más de 20 mil personas cerró el Festival Bandera de Rosario</h2>
         <p>Más de 20 mil personas disfrutaron de los shows de 30 bandas y solistas entre los que estuvieron 
           <br>desde la mexicana Julieta Venegas hasta la argentina Natalie Pérez, con escala en las bandas orientales 
           <br>No Te Va Gustar (NTVG) y Cuarteto de Nos.</p>
       </article>
-      <article>
-        <a href="https://www.telam.com.ar/notas/202310/642677-futbol-copa-liga-river-demichelis-talleres-cordoba-verdugo.html"> <img src="./img/deportes1.png" height="350" alt="deportes1"> </a>
+      <article id="actualidad2" class="areaActualidad2">
+        <a href="https://www.telam.com.ar/notas/202310/642677-futbol-copa-liga-river-demichelis-talleres-cordoba-verdugo.html"> <img class="imagenPrincipal" src="./img/deportes1.png" alt="deportes1"> </a>
         <h2>River derrotó a Talleres en el Monumental y quedó como líder de la zona A</h2>
         <p>El Millonario venció al conjunto cordobés como local por 1 a 0, con un tanto de Salomón Rondón a los
           <br> 19 minutos del primer tiempo, en un cotejo en el marco de la fecha 8 de la Copa de la Liga Profesional.</p>
       </article>
-    </section>
-    <section>
-      <article>
-        <a href="https://www.telam.com.ar/notas/202310/642732-israel-hezbollah.html"> <img src="./img/israel.png" height="300" alt="israel"> </a>
+      <article id="actualidad3" class="areaActualidad3">
+        <a href="https://www.telam.com.ar/notas/202310/642732-israel-hezbollah.html"> <img class="imagenPrincipal" src="./img/israel.png" alt="israel"> </a>
         <h2>Israel combate a Hamas, bombardea Gaza e intercambia disparos con Hezbollah</h2>
         <p>Los ataques dejaron más de 600 fallecidos en Israel, mientras que autoridades de Gaza, el enclave costero
           <br> palestino gobernado por Hamas, informaron ya superaron los 400 muertos por bombardeos israelíes.</p>
       </article>
-      <article>
-        <a href="https://www.telam.com.ar/notas/202310/642749-alberto-fernandez-china.html"><img src="./img/alberto.png" height="300" alt="alberto"> </a>
+      <article id="actualidad4" class="areaActualidad4">
+        <a href="https://www.telam.com.ar/notas/202310/642749-alberto-fernandez-china.html"><img class="imagenPrincipal" src="./img/alberto.png" alt="alberto"> </a>
         <h2>Alberto Fernández viaja a China para participar del III Foro de la Franja y la Ruta</h2>
         <p>El Presidente mantendrá una reunión con la exjefa de Estado de Brasil y titular del Banco de los Brics,
           <br> Dilma Rousseff, y luego participará del III Foro de la Franja y la Ruta para la Cooperación Internacional,
           <br> por invitación de Xi Jinping.</p>
       </article>
-      <article>
-        <a href="https://www.telam.com.ar/notas/202310/642681-los-pumas-argentina-clasificacion-japon-minuto-a-minuto-mundial-rugby-2023-francia-michael-cheika.html"> <img src="./img/rugby.png" height="300" alt="rugby"> </a>
+      <article id="actualidad5" class="areaActualidad5">
+        <a href="https://www.telam.com.ar/notas/202310/642681-los-pumas-argentina-clasificacion-japon-minuto-a-minuto-mundial-rugby-2023-francia-michael-cheika.html"> <img class="imagenPrincipal" src="./img/rugby.png" alt="rugby"> </a>
         <h2>Argentina lo logró: luchó en un duro partido ante Japón y clasificaron a cuartos</h2>
         <p>El seleccionado argentino de rugby, con tres try de Mateo Carreras, venció a su par asiático por 39-27, en el último juego
           <BR> de ambos por la fase de grupos por zona D. El próximo rival para el combinado nacional será ante Gales, el próximo sábado.</p>
       </article>
     </section>
   </main>
+  
   <footer>
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button  class="btn btn-primary me-md-2"   type="button" a href="https://we.me+5491161890701">WhatsApp</button>  
+      <a href="https://wa.me/5491161890701"><button class="btn btn-primary me-md-2">WhatsApp</button></a>
     </div>
     <p>&copy; 2023 Fm Meraki</p>
   </footer>

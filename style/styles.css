@@ -9,6 +9,7 @@
   /* Estilos específicos para diferentes tamaños de pantalla */
       @media screen and (max-width: 768px) {
   /* Estilos para dispositivos móviles y tablets en posición vertical */
+        
       }
       
       @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -20,11 +21,6 @@
       }
 
   /* Estilos para la página de noticias */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
   header {
     background-color: #333;
     color: #fff;
@@ -46,6 +42,7 @@
     margin-bottom: 10px;
   }
   h2 {
+    font-size: 20px;
     margin: 0;
     padding: 0;
   }
@@ -62,16 +59,67 @@
   .float-right {
       text-align: right;
   }
-  .btn-bd-primary {
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
-    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
-    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+
+
+  /* IMG Tamaño */
+
+  .imagenPrincipal {
+    width: 350px;
+    height: 350px;
   }
+
+
+ /* GRID de Noticiaas */
+
+ /* grid areas */
+
+ .areaCar {
+  grid-area: carousel_noticias;
+ }
+ .areaLista {
+  grid-area: listaNoticias;
+ }
+ .areaUltimaNo {
+  grid-area: ultima-noticia;
+ }
+ .areaActualidad {
+  grid-area: actualidad;
+ }
+
+ .areaActualidad2 {
+  grid-area: actualidad2;
+ }
+
+ .areaActualidad3 {
+  grid-area: actualidad3;
+ }
+
+ .areaActualidad4 {
+  grid-area: actualidad4;
+ }
+
+ .areaActualidad5 {
+  grid-area: actualidad5;
+ }
+
+
+ .gridNoticias {
+  display: grid;
+
+
+  grid-template-areas: 
+  
+  "carousel_noticias carousel_noticias listaNoticias"
+  "ultima-noticia ultima-noticia ultima-noticia"
+  "actualidad actualidad2 actualidad2"
+  "actualidad3 actualidad4 actualidad5"
+  ;
+
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+
+
+ }

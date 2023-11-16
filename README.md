@@ -7,5 +7,5 @@ No somos un portal más de noticias, somo el sitio que vos elegís.
 [YouTube](http://https://www.youtube.com/channel/UCs-VFLueSgXxofbQ0lYrbKA "YouTube")
 [Radios Argentinas](http://https://www.radios-argentinas.org/fm-meraki "Radios Argentinas")
 ### Vos también podes sumarte a nuestro staff
-> Ya sea como redactor o con tu programa de radio, en Fm Meraki encontrarás un lugar en que podas crecer profesionalmente acompañado de grandes profesionales y especialistas en el tema.
+> Ya sea como redactor o con tu programa de radio, en Fm Meraki encontrarás un lugar en que podas crecer profesionalmente acompañado de grandes profesionales y especialistas en el tema. inclusive podes colaborar con nuestro proyecto ingresando [Github](https://github.com/ChichoDesbat/Practica1 "aqui")
 
